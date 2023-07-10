@@ -3,7 +3,10 @@ body {
   font-size: 15px;
   letter-spacing: .05em;
   color: #333;
+  background-color: #ffd700;
 }
+
+p {text-shadow: 1px 2px 3px #808080; }
 
 a {
   transition: opacity .3s;
@@ -39,9 +42,9 @@ img {
   padding: 90px 0;
 }
 
-.section:nth-of-type(odd) {
+/* .section:nth-of-type(odd) {
   background-color: #f7f7f7;
-}
+} */
 
 .container {
   max-width: 1340px;
@@ -76,8 +79,8 @@ img {
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+  /* background-color: #fff; */
+  /* box-shadow: 0 5px 10px -6px rgba(0,0,0,.1); */
 }
 
 .header .container {
@@ -164,11 +167,6 @@ img {
   line-height: 1;
   margin-bottom: 40px;
   letter-spacing: .08em;
-}
-
-.mv-text {
-  font-size: 16px;
-  line-height: 1.8;
 }
 
 /*--------------------------------
