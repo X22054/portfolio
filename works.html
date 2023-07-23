@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
   <meta property='og:type' content='website'>
-  <meta property='og:title' content='WebデザイナーTARO YAMADA ポートフォリオ'>
+  <meta property='og:title' content='RIKO SUGIURA ポートフォリオ'>
   <meta property='og:url' content='URLが入る'>
-  <meta property='og:description' content='TARO YAMADAのポートフォリオサイトです。'>
+  <meta property='og:description' content='RIKO SUGIURA'>
   <meta property="og:image" content="img/ogp.png">
-  <meta name="description" content="TARO YAMADAのポートフォリオサイトです" />
-  <title>TARO YAMADA ポートフォリオ</title>
+  <meta name="description" content="RIKO SUGIURAのポートフォリオサイトです" />
+  <title>RIKO SUGIURAポートフォリオ</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
@@ -31,18 +31,42 @@
         </h1>
         <nav class="gnav">
           <ul class="gnav-list">
-            <li class="gnav-item"><a href=".#works">WORKS</a></li>
+            <li class="gnav-item"><a href="./#works">WORKS</a></li>
             <li class="gnav-item"><a href="./#skill">SKILL</a></li>
             <li class="gnav-item"><a href="./#about">ABOUT</a></li>
             <li class="gnav-item"><a href="./#contact">CONTACT</a></li>
           </ul>
         </nav>
+              <!-- ハンバーガーメニュー部分 -->
+      <div class="nav">
+    
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+    
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open">
+          <!-- <img src="./img/hamburger.png" alt="hamburger"> -->
+          <span></span>
+        </label>
+    
+        <!-- メニュー -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="./#works">WORK</a></li>
+            <li class="nav_item"><a href="./#skill">SKILL</a></li>
+            <li class="nav_item"><a href="./#about">ABOUT</a></li>
+          </ul>
+        </nav>
+   
+      </div>
       </div>
     </header>
     <!-- /header -->
 
     <div class="container_2">
-        <h2 class="title_2">WORKS</h2>
+        <h2 class="title_2">
+          <img src="img/work.png" alt="works" width="50%">
+        </h2>
         <div class="works-list_2">
           <a class="works-item_2" href="works-template.html">
             <div class="works-img_2"><img src="img/works-sample-thumb.jpg" alt=""></div>
@@ -69,6 +93,9 @@
             <p class="works-name_2">作品名が入る</p>
             <p class="works-info_2">Banner Design</p>
           </a>
+        </div>
+        <div class="home-link">
+          <a href="./#works"><br><br> ＜ return</a>
         </div>
       </div>
       

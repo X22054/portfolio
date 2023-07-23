@@ -14,7 +14,7 @@ body {
 a {
   transition: opacity .3s;
   text-decoration: none;
-  color: #1ca9e3;
+  color: #fff;
 }
 
 img {
@@ -79,7 +79,7 @@ img {
 ---------------------------------*/
 .header {
   position: fixed;
-  top: 0;
+  top: -2%;
   z-index: 1;
   width: 100%;
   /* background-color: #fff; */
@@ -90,7 +90,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 30px 40px;
 }
 
 .header-logo {
@@ -111,6 +111,7 @@ img {
   list-style: none;
 }
 
+/* 文字と文字の間隔あける */
 .gnav-item:not(:last-child) {
   margin-right: 20px;
 }
@@ -142,119 +143,11 @@ img {
   width: 100%;
 }
 
-/* ハンバーガー */
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
-
-#particles-js {
-  position: absolute;
-  /*描画固定*/
-  z-index: -1;
-  /*描画を一番下に*/
-  width: 100%;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c1ccb4), color-stop(50%, #91ab9c), color-stop(60%, #91ab9c), to(#00755f));
-  background: linear-gradient(to bottom, #c1ccb4, #91ab9c 50%, #91ab9c 60%, #00755f);
+.nav{
+  display: none;
 }
 
-#wrapper {
-  position: relative;
-  /*描画を#particles-jsよりも上にするためposition:relative;を指定*/
-  z-index: 1;
-  /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
-  width: 100%;
-  height: 100%;
-}
-
-.hamBtn {
-  display: block;
-  width: 10%;
-  position: relative;
-  z-index: 3;
-  max-width: 40px;
-}
-.hamBtn__close {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-}
-.hamBtn.close {
-  background-color: #c1ccb4;
-  opacity: 0.8;
-  border-radius: 0;
-}
-
-.hamBtn.close .hamBtn__close {
-  opacity: 1;
-}
-
-.hamBtn.close .hamBtn__open {
-  opacity: 0;
-}
-
-.noscroll {
-  overflow: hidden;
-}
-
-.nav-wrapper {
-  visibility: hidden;
-  opacity: 0;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  z-index: 2;
-}
-
-.header-nav {
-  width: 100%;
-  height: 100%;
-  background-color: #c1ccb4;
-  z-index: 2;
-  opacity: 0.9;
-}
-
-.nav-list {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.nav-item {
-  margin-right: 0;
-  margin-bottom: 2em;
-  list-style: none;
-}
-.nav-item a {
-  text-decoration: none;
-  color: #00755f;
-  font-weight: 800;
-  font-size: 22px;
-}
-.nav-item img {
-  width: 16%;
-}
-
-/* メニューオープン時 */
-.nav-wrapper.fade {
-  visibility: visible;
-  opacity: 1;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
+/*  */
 
 /*--------------------------------
  メインビジュアル
@@ -613,7 +506,10 @@ Works(詳細)ページ
     margin-right: 15px;
   }
 
-  .gnav-item:not(:last-child) {
+  .gnav{
+    display: none;
+  }
+  /* .gnav-item:not(:last-child) {
     margin-right: 10px;
   }
 
@@ -623,7 +519,100 @@ Works(詳細)ページ
 
   .gnav-item a:after {
     display: none;
+  } */
+
+  /* ここから下がハンバーガーメニューに関するCSS */
+
+  .nav{
+    display: block;
   }
+  
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;/* 重なり順を一番上にする */
+  cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #fff;
+  transition: 0.5s;
+  position: absolute;
+  background-image: url("img/hamburger.png");
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 8px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+  
+/* メニューのデザイン*/
+.nav_content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%; /* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: #ff8c07e3;
+  transition: .5s;
+}
+
+.nav_content a {
+  display: block;
+  text-align: center;
+}
+
+/* メニュー黒ポチを消す */
+.nav_list {
+  list-style: none;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+  left: 0;/* メニューを画面に入れる */
+}
+
+
 
   /*  メインビジュアル */
   .mv {
@@ -735,14 +724,73 @@ Works(詳細)ページ
   }
 }
 
+/*==================================================
+スライダーのためのcss
+===================================*/
+
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+	z-index: 3;
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #ccc;/*矢印の色*/
+    border-right: 2px solid #ccc;/*矢印の色*/
+    height: 25px;
+    width: 25px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left:2.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right:2.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+	position: relative;
+	z-index: 3;
+    text-align:center;
+	margin:-50px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+	margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
 
 /*--------------------------------
-Works(一覧)ページ works.html
+Works(一覧)ページ
 ---------------------------------*/
+
 .container_2 {
   max-width: 1340px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 30 40px;
 }
 
 .section_2 {

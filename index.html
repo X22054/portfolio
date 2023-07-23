@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta property='og:type' content='website'>
-  <meta property='og:title' content='WebデザイナーTARO YAMADA ポートフォリオ'>
+  <meta property='og:title' content='RIKO SUGIURAポートフォリオ'>
   <meta property='og:url' content='URLが入る'>
-  <meta property='og:description' content='TARO YAMADAのポートフォリオサイトです。'>
+  <meta property='og:description' content='ポートフォリオサイトです。'>
   <meta property="og:image" content="img/ogp.png">
-  <meta name="description" content="TARO YAMADAのポートフォリオサイトです" />
+  <meta name="description" content="ポートフォリオサイトです" />
   <title>SUGIURA RIKO ポートフォリオ</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -17,77 +17,48 @@
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.ico" />
   <link rel=”canonical” href=”URLが入る” />
- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
-
 <body>
   <div class="wrapper">
-
     <!-- header -->
-    <header class="header">
-      <div class="header__inner">
-        <div class="header__ham_flex">
-          <h1 class="header__logo logo">
-            <a href="./index.html">
-              <img src="./images/SVG/logo.svg" alt="AZUMI NAGANO portfoliosite">
-            </a>
-          </h1>
-
-          <div class="nav-wrapper">
-            <nav class="header-nav">
-              <ul class="nav-list">
-                <li class="nav-item">
-                  <a href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./works.html">Works</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.instagram.com/_azu_design/">
-                    <img class="pNav__ig" src="./images/SVG/instagram_icon.svg" alt="Instagram">
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <button class="burger-btn hamBtn">
-            <img class="hamBtn__open" src="./images/ham_menu.png" alt="menu">
-            <img class="hamBtn__close" src="./images/ham_close.png" alt="close">
-          </button>
-        </div>
-      </div>
-
-      <div class="header__pc-nav pNav">
-        <div class="pNav__inner">
-          <ul class="pNav__menu">
-            <li class="pNav__list">
-              <a class="pNav__link" href="./index.html">Home</a>
-            </li>
-            <li class="pNav__list">
-              <a class="pNav__link" href="./works.html">Works</a>
-            </li>
-            <li class="pNav__list">
-              <a class="pNav__link" href="./about.html">About</a>
-            </li>
-            <li class="pNav__list">
-              <a class="pNav__link" href="./contact.html">Contact</a>
-            </li>
-            <li class="pNav__list">
-              <a href="https://www.instagram.com/_azu_design/" class="pNav__link">
-                <div class="pNav__iBox">
-                  <img class="pNav__ig" src="./images/SVG/instagram_icon.svg" alt="Instagram">
-                  <img class="pNav__ig-hover" src="./images/SVG/instagram_icon_hover.svg" alt="Instagram">
-                </div>
-              </a>
-            </li>
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href=".">SUGIURA RIKO</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href=".#works">WORKS</a></li>
+            <li class="gnav-item"><a href="./#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="./#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="./#contact">CONTACT</a></li>
           </ul>
-        </div>
+        </nav>
+
+        <!-- ハンバーガーメニュー部分 -->
+      <div class="nav">
+    
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+    
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open">
+          <!-- <img src="./img/hamburger.png" alt="hamburger"> -->
+          <span></span>
+        </label>
+    
+        <!-- メニュー -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="./#works">WORKS</a></li>
+            <li class="nav_item"><a href="./#skill">SKILL</a></li>
+            <li class="nav_item"><a href="./#about">ABOUT</a></li>
+            <li class="nav_item"><a href="./#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+   
+      </div>
       </div>
     </header>
     <!-- /header -->
@@ -106,12 +77,36 @@
       <!-- works -->
       <section class="works section" id="works">
         <div class="container">
-          <h2 class="title">WORKS</h2>
-          <ul class="slider">
-            <li class="slider-item slider-item01"></li>
-            <li class="slider-item slider-item02"></li>
-            <li class="slider-item slider-item03"></li>
-            </ul>
+          <h2 class="title">
+            <img src="img/work.png" alt="works" width="50%">
+          </h2>
+          <div class="works-list">
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-sample-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Design / Coding(Responsive) / WordPress</p>
+            </a>
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Design</p>
+            </a>
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Banner Design</p>
+            </a>
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Banner Design</p>
+            </a>
+          </div>
           <div class="works__btn-all">
             <a href="./works.html">
               <button class="works__btn btn">
@@ -141,7 +136,9 @@
       <!-- skill -->
       <section class="skill section" id="skill">
         <div class="container">
-          <h2 class="title">SKILL</h2>
+          <h2 class="title">
+            <img src="img/skill.png" alt="skill" width="50%">
+          </h2>
           <div class="skill-list">
             <div class="skill-item">
               <p class="skill-img"><img src="img/htmlicon.png" alt=""></p>
@@ -199,17 +196,19 @@
       <!-- about -->
       <section class="about section" id="about">
         <div class="container">
-          <h2 class="title">ABOUT</h2>
+          <h2 class="title">
+            <img src="img/about.png" alt="about" width="50%">
+          </h2>
           <div class="profile">
             <p class="profile-img">
-              <img src="img/profile.jpg" alt="">
+              <img src="img/About_img.jpg" alt="">
             </p>
             <div class="profile-body">
               <p>
-                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+                愛知県出身。
               </p>
               <p>
-                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+                趣味はラジオを聴くことと、お笑いを見ること。好きな食べ物は味噌煮込みうどん。
               </p>
             </div>
           </div>
@@ -220,7 +219,9 @@
       <!-- contact -->
       <section class="contact section" id="contact">
         <div class="container">
-          <h2 class="title">CONTACT</h2>
+          <h2 class="title">
+            <img src="img/contact.png" alt="contact" width="70%">
+          </h2>
           <p class="lead">
             お問い合わせは、<br class="sp-only">SNSかメールにてお願いいたします。
           </p>
@@ -244,10 +245,7 @@
     <!-- /footer -->
 
   </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!--自作のJS-->
   <script type='text/javascript' src="js/script.js"></script>
 </body>
 </html>
