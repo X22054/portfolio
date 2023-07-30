@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
   <meta property='og:type' content='website'>
-  <meta property='og:title' content='WebデザイナーTARO YAMADA ポートフォリオ'>
+  <meta property='og:title' content='ポートフォリオ'>
   <meta property='og:url' content='URLが入る'>
-  <meta property='og:description' content='TARO YAMADAのポートフォリオサイトです。'>
+  <meta property='og:description' content='ポートフォリオサイトです。'>
   <meta property="og:image" content="img/ogp.png">
-  <meta name="description" content="TARO YAMADAのポートフォリオサイトです" />
+  <meta name="description" content="ポートフォリオサイトです" />
   <title>TARO YAMADA ポートフォリオ</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -26,11 +26,12 @@
     <header class="header ">
       <div class="container">
         <h1 class="header-logo">
-          <a href=".">SUGIURA RIKO
-          </a>
+          <!-- <a href=".">SUGIURA RIKO
+          </a> -->
         </h1>
         <nav class="gnav">
           <ul class="gnav-list">
+            <li class="gnav-item"><a href="./#home">TOP</a></li>
             <li class="gnav-item"><a href=".#works">WORKS</a></li>
             <li class="gnav-item"><a href="./#skill">SKILL</a></li>
             <li class="gnav-item"><a href="./#about">ABOUT</a></li>
@@ -38,29 +39,30 @@
           </ul>
         </nav>
 
-           <!-- ハンバーガーメニュー部分 -->
-      <div class="nav">
-    
-        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-        <input id="drawer_input" class="drawer_hidden" type="checkbox">
-    
-        <!-- ハンバーガーアイコン -->
-        <label for="drawer_input" class="drawer_open">
-          <!-- <img src="./img/hamburger.png" alt="hamburger"> -->
-          <span></span>
-        </label>
-    
-        <!-- メニュー -->
-        <nav class="nav_content">
-          <ul class="nav_list">
-            <li class="nav_item"><a href="./#works">WORKS</a></li>
-            <li class="nav_item"><a href="./#skill">SKILL</a></li>
-            <li class="nav_item"><a href="./#about">ABOUT</a></li>
-            <li class="nav_item"><a href="./#contact">CONTACT</a></li>
-          </ul>
-        </nav>
-   
-      </div>
+      <!-- ハンバーガーメニュー部分 -->
+      <header class="header ">
+        <div class="header__inner">
+          <h1 class="header__title header-title">
+            <!-- <a href="#">ロゴ</a> -->
+          </h1>
+  
+          <nav class="header__nav nav" id="js-nav">
+            <ul class="nav__items nav-items">
+              <li class="nav-items__item"><a href=".#home">TOP</a></li>
+              <li class="nav-items__item"><a href=".#works">WORKS</a></li>
+              <li class="nav-items__item"><a href="./#skill">SKILL</a></li>
+              <li class="nav-items__item"><a href="./#about">ABOUT</a></li>
+              <li class="nav-items__item"><a href="./#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+  
+          <button class="header__hamburger hamburger" id="js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
       </div>
     </header>
     <!-- /header -->
@@ -69,33 +71,24 @@
 
       <article class="article">
         <div class="article-container">
-          <h2 class="article-title">DesignXYZ様</h2>
+          <h2 class="article-title">第43回愛知工業大学駅伝大会募集ポスターその1</h2>
           <div class="article-body">
             <p>
-              <img src="img/works-sample.jpg" alt="">
+              <img src="img/poster_2.png" alt="">
             </p>
             <p>
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります（作品について一言）
+              愛知工業大学駅伝大会募集のため、ポスターを制作しました。昔風なポスターを作ってみたいと思いフォントや背景を工夫しました。また、ポスターのサイズはA1サイズで作成しました。
             </p>
-            <h3>URL</h3>
-            <p><a href="https://yahoo.co.jp" target="_blank" rel="noopener">https://yahoo.co.jp</a></p>
+            <!-- <h3>URL</h3>
+            <p><a href="https://yahoo.co.jp" target="_blank" rel="noopener">https://yahoo.co.jp</a></p> -->
+            <h3>制作日</h3>
+            <p>2023.07</p>
+            <h3>制作期間</h3>
+            <p>1週間</p>
             <h3>担当</h3>
             <p>デザイン・コーディング</p>
-            <h3>サイトの目的</h3>
-            <p>サービスの認知と新規クライアントの獲得</p>
-            <h3>ターゲット</h3>
-            <p>テキストが入りますテキストが入ります</p>
-            <h3>デザインについて</h3>
-            <p>
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。<br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
-            </p>
-            <p>
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
-            </p>
-            <h3>コーディングについて</h3>
-            <p>
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
-            </p>
+            <h3>使用ツール</h3>
+            <p>Illustrator</p>
           </div>
           <div class="home-link">
             <a href="works.html">Works一覧へ</a>

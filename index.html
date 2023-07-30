@@ -25,10 +25,11 @@
     <header class="header ">
       <div class="container">
         <h1 class="header-logo">
-          <a href=".">SUGIURA RIKO</a>
+          <!-- <a href=".">SUGIURA RIKO</a> -->
         </h1>
         <nav class="gnav">
           <ul class="gnav-list">
+            <li class="gnav-item"><a href=".#home">TOP</a></li>
             <li class="gnav-item"><a href=".#works">WORKS</a></li>
             <li class="gnav-item"><a href="./#skill">SKILL</a></li>
             <li class="gnav-item"><a href="./#about">ABOUT</a></li>
@@ -36,29 +37,30 @@
           </ul>
         </nav>
 
-        <!-- ハンバーガーメニュー部分 -->
-      <div class="nav">
-    
-        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-        <input id="drawer_input" class="drawer_hidden" type="checkbox">
-    
-        <!-- ハンバーガーアイコン -->
-        <label for="drawer_input" class="drawer_open">
-          <!-- <img src="./img/hamburger.png" alt="hamburger"> -->
-          <span></span>
-        </label>
-    
-        <!-- メニュー -->
-        <nav class="nav_content">
-          <ul class="nav_list">
-            <li class="nav_item"><a href="./#works">WORKS</a></li>
-            <li class="nav_item"><a href="./#skill">SKILL</a></li>
-            <li class="nav_item"><a href="./#about">ABOUT</a></li>
-            <li class="nav_item"><a href="./#contact">CONTACT</a></li>
+            <!-- ハンバーガーメニュー部分 -->
+      <header class="header ">
+      <div class="header__inner">
+        <h1 class="header__title header-title">
+          <!-- <a href="#">ロゴ</a> -->
+        </h1>
+
+        <nav class="header__nav nav" id="js-nav">
+          <ul class="nav__items nav-items">
+            <li class="nav-items__item"><a href=".#home">TOP</a></li>
+            <li class="nav-items__item"><a href=".#works">WORKS</a></li>
+            <li class="nav-items__item"><a href="./#skill">SKILL</a></li>
+            <li class="nav-items__item"><a href="./#about">ABOUT</a></li>
+            <li class="nav-items__item"><a href="./#contact">CONTACT</a></li>
           </ul>
         </nav>
-   
+
+        <button class="header__hamburger hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+    </header>
       </div>
     </header>
     <!-- /header -->
@@ -82,29 +84,34 @@
           </h2>
           <div class="works-list">
             <a class="works-item" href="works-template.html">
-              <div class="works-img"><img src="img/works-sample-thumb.jpg" alt="" /></div>
-              <p class="works-name">作品名が入る</p>
-              <p class="works-info">Design / Coding(Responsive)</p>
+              <div class="works-img"><img src="img/poster_2.png" alt="" /></div>
+              <p class="works-name">駅伝ポスターデザインその11</p>
+              <p class="works-info">ポスター</p>
             </a>
-            <a class="works-item" href="works-template.html">
-              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
-              <p class="works-name">作品名が入る</p>
-              <p class="works-info">Design / Coding(Responsive) / WordPress</p>
+            <a class="works-item" href="works-template-2.html">
+              <div class="works-img"><img src="img/poster_3.png" alt="" /></div>
+              <p class="works-name">第43回愛知工業大学駅伝大会募集ポスターその2</p>
+              <p class="works-info">ポスター</p>
             </a>
-            <a class="works-item" href="works-template.html">
-              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
-              <p class="works-name">作品名が入る</p>
-              <p class="works-info">Design</p>
+            <a class="works-item_2" href="works-template-3.html">
+              <div class="works-img_2"><img src="img/towel_1.png" alt=""></div>
+              <p class="works-name_2">第43回愛知工業大学駅伝大会タオルデザインその1</p>
+              <p class="works-info_2">タオルデザイン</p>
             </a>
-            <a class="works-item" href="works-template.html">
-              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
-              <p class="works-name">作品名が入る</p>
-              <p class="works-info">Banner Design</p>
+            <a class="works-item_2" href="works-template-4.html">
+              <div class="works-img_2"><img src="img/towel_2.png" alt=""></div>
+              <p class="works-name_2">第43回愛知工業大学駅伝大会タオルデザインその2</p>
+              <p class="works-info_2">タオルデザイン</p>
             </a>
-            <a class="works-item" href="works-template.html">
-              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
-              <p class="works-name">作品名が入る</p>
-              <p class="works-info">Banner Design</p>
+            <a class="works-item_2" href="works-template-5.html">
+              <div class="works-img_2"><img src="img/towel_3.png" alt=""></div>
+              <p class="works-name_2">第43回愛知工業大学駅伝大会タオルデザインその3</p>
+              <p class="works-info_2">タオルデザイン</p>
+            </a>
+            <a class="works-item_2" href="works-template-6.html">
+              <div class="works-img_2"><video controls src="video/MAYA_video.mp4" alt=""></video></div>
+              <p class="works-name_2">海の中</p>
+              <p class="works-info_2">CG動画</p>
             </a>
           </div>
           <div class="works__btn-all">
@@ -144,49 +151,97 @@
               <p class="skill-img"><img src="img/htmlicon.png" alt=""></p>
               <div class="skill-body">
                 <h3 class="skill-name">HTML5/CSS3</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                <!-- <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p> -->
+                  <ul class="skill-HTML">
+                  <ul class="skill-skill">
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/gray.png" alt="" width="100%"></li>
+                    <li><img src="img/gray.png" alt="" width="100%"></li>
+                  </ul>
+                  <!-- <ul class="skill-skill2">
+                    <li><img src="img/gray_heart.png" alt="" width="100%"></li>
+                    <li><img src="img/gray_heart.png" alt="" width="100%"></li>
+                  </ul> -->
+                  </ul>
               </div>
             </div>
             <div class="skill-item">
               <p class="skill-img"><img src="img/javascripticon.png" alt=""></p>
               <div class="skill-body">
                 <h3 class="skill-name">JavaScript</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                <!-- <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p> -->
+                  <ul class="skill-JavaScript">
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/gray.png" alt="" width="100%"></li>
+                    <li><img src="img/gray.png" alt="" width="100%"></li>
+                  </ul>
               </div>
             </div>
             <div class="skill-item">
               <p class="skill-img"><img src="img/mayaicon.png" alt=""></p>
               <div class="skill-body">
                 <h3 class="skill-name">MAYA</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                <!-- <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p> -->
+                  <ul class="skill-HTML">
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/gray.png" alt="" width="100%"></li>
+                  </ul>
               </div>
             </div>
             <div class="skill-item">
               <p class="skill-img"><img src="img/adobephotoshopicon.png" alt=""></p>
               <div class="skill-body">
                 <h3 class="skill-name">Photoshop</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                <!-- <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p> -->
+                  <ul class="skill-Photoshop">
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                  </ul>
               </div>
             </div>
             <div class="skill-item">
               <p class="skill-img"><img src="img/adobeillustratoricon.png" alt=""></p>
               <div class="skill-body">
                 <h3 class="skill-name">Illustrator</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                <!-- <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p> -->
+                  <ul class="skill-Illustrator">
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                  </ul>
               </div>
             </div>
             <div class="skill-item">
               <p class="skill-img"><img src="img/adobepremiereicon.png" alt=""></p>
               <div class="skill-body">
                 <h3 class="skill-name">Premire Pro</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
-              </div>
+                <!-- <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p> -->
+                  <ul class="skill-Premire Pro">
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                    <li><img src="img/heart.png" alt="" width="100%"></li>
+                  </ul>
+                </div>
             </div>
           </div>
         </div>
@@ -205,10 +260,10 @@
             </p>
             <div class="profile-body">
               <p>
-                愛知県出身。
+                こんにちは。愛知県在住の大学生です。
               </p>
               <p>
-                趣味はラジオを聴くことと、お笑いを見ること。好きな食べ物は味噌煮込みうどん。
+              趣味はラジオを聴くことと、お笑いを見ること。好きな食べ物は味噌煮込みうどんです。
               </p>
             </div>
           </div>
@@ -220,7 +275,7 @@
       <section class="contact section" id="contact">
         <div class="container">
           <h2 class="title">
-            <img src="img/contact.png" alt="contact" width="70%">
+            <img src="img/contact.png" alt="contact" width="70%" height="80%">
           </h2>
           <p class="lead">
             お問い合わせは、<br class="sp-only">SNSかメールにてお願いいたします。
