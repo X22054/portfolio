@@ -33,3 +33,20 @@ ham.on('click', function () { //ハンバーガーメニューをクリックし
 $('nav__items nav-items').on('click', function(event) {
   $('header__hamburger hamburger').trigger('click');
 });
+
+//レイジーロード
+const headings = document.querySelectorAll('.popup')
+const observer = new IntersectionObserver(popupElements)
+
+function popupElements(entries){
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    }
+  })
+}
+
+headings.forEach(heading => {
+  observer.observe(heading)
+})
+
